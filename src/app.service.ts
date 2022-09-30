@@ -1,12 +1,12 @@
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common'
 
-import { LocaleJSON, Locales } from './types'
+import { LocaleJSON, Locale, Namespace } from './types'
 import { getResource } from './resources'
 
 @Injectable()
 export class AppService {
-  getLocaleJSON(locale: Locales): LocaleJSON {
-    const resource = getResource(locale)
+  getLocaleJSON(locale: Locale, ns: Namespace): LocaleJSON {
+    const resource = getResource(locale, ns)
 
     if (!resource) {
       throw new HttpException(
@@ -18,6 +18,6 @@ export class AppService {
       )
     }
 
-    return getResource(locale)
+    return resource
   }
 }
