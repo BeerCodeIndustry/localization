@@ -1,4 +1,5 @@
 {
     "test": "test",
-    "types": "types"
+    "types": "types",
+    "terms": "terms"
 }
