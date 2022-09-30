@@ -2,5 +2,6 @@
     "test": "test",
     "types": "types",
     "terms": "terms",
-    "good": "good"
+    "good": "good",
+    "another": "another"
 }
