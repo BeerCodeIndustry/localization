@@ -10,7 +10,7 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/server",
     "lint": "eslint \"{src,__tests__}/**/*.ts\" --fix"
   },
   "dependencies": {
