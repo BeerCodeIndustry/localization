@@ -7,6 +7,16 @@ import { AppService } from './app.service'
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get('/namespaces')
+  getNamespaces(): string[] {
+    return Object.values(Namespace)
+  }
+
+  @Get('/locales')
+  getLocales(): string[] {
+    return Object.values(Locale)
+  }
+
   @Get('/:locale/:namespace')
   getResourse(
     @Param('locale') locale: Locale,
