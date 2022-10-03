@@ -1,3 +1,9 @@
-export type LocaleJSON = Record<string, Record<string, string>>
-
-export type Locales = 'en' | 'ru'
+export type LocaleJSON = Record<string, string>
+export enum Locale {
+  EN = 'en',
+  RU = 'ru',
+}
+export enum Namespace {
+  QIDEO = 'qideo',
+  COMMON = 'common',
+}
