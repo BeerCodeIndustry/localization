@@ -1,8 +1,4 @@
 {
-    "test": "test",
-    "types": "types",
-    "terms": "terms",
-    "good": "good",
-    "another": "another",
-    "nazar": "nazar"
+    "signUp": "Sign up",
+    "login": "Login"
 }
