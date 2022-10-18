@@ -3,5 +3,6 @@
     "login": "Войти",
     "email": "Почта",
     "password": "Пароль",
-    "username": "Имя пользователя"
+    "username": "Имя пользователя",
+    "repeatPassword\n": "Повторите Пароль"
 }
